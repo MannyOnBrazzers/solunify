@@ -1,0 +1,138 @@
+.home {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  gap: 100px;
+  background-color: #679bfb;
+}
+
+.home__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  object-fit: cover;
+}
+
+.home__header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  z-index: 1;
+}
+
+.home__header_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home__header_title {
+  font-family: "SourceSans3-Regular";
+  color: #ffffffe8;
+  letter-spacing: 75px;
+  font-size: 150px;
+}
+
+.home__header_description {
+  font-family: "SourceSans3-Regular";
+  color: #dededee8;
+  letter-spacing: 10px;
+  font-size: 20px;
+}
+
+.home__header_button {
+  width: 125px;
+  height: 45px;
+  outline: none;
+  font-family: "SourceSans3-Regular";
+  color: #ffffffe8;
+  background: #111115;
+  border-radius: 5px;
+  border: none;
+  transition: transform 0.2s ease, background 0.3s ease;
+  will-change: transform;
+  cursor: pointer;
+}
+
+.home__header_button:hover {
+  transform: scale(1.03);
+  backface-visibility: hidden;
+}
+
+.home__header_slider {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  bottom: 150px;
+  gap: 15px;
+}
+
+.home__header_slider_item {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.57);
+  transition: transform 0.2s ease, background 0.3s ease;
+  will-change: transform;
+  cursor: pointer;
+}
+
+.home__header_slider_item.selected {
+  background-color: white;
+}
+
+.home__header_slider_item:hover {
+  transform: scale(1.03);
+  backface-visibility: hidden;
+}
+
+.home__header_sale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-top: auto;
+  background: linear-gradient(to right, transparent, #679bfbce, transparent);
+  width: 100%;
+  height: 125px;
+  bottom: 0;
+  gap: 35px;
+}
+
+.home__header_sale_text {
+  font-family: "SourceSans3-LightItalic";
+  color: #ffffffe8;
+  font-size: 35px;
+}
+
+.home__header_sale_text span {
+  font-family: "SourceSans3-BoldItalic";
+  color: #ffffffe8;
+  font-size: 35px;
+}
+
+.home__header_sale_button {
+  width: 125px;
+  height: 45px;
+  outline: none;
+  font-family: "SourceSans3-Regular";
+  color: #ffffffe8;
+  background: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: transform 0.2s ease, background 0.3s ease;
+  will-change: transform;
+  cursor: pointer;
+}
+
+.home__header_sale_button:hover {
+  transform: scale(1.03);
+  backface-visibility: hidden;
+}

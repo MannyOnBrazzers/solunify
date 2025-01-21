@@ -1,0 +1,119 @@
+.about {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 50px 300px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 800px;
+  gap: 100px;
+}
+
+.about__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+.about__content_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  gap: 25px;
+}
+
+.about__content_item_image {
+  width: 100px;
+  height: 100px;
+}
+
+.about__content_item_text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+
+.about__content_item_text_title {
+  font-family: "SourceSans3-Regular";
+  color: #ffffffe8;
+  font-size: 20px;
+}
+
+.about__content_item_text_description {
+  font-family: "SourceSans3-Regular";
+  color: #b9b9b9e8;
+  font-size: 14px;
+}
+
+.about__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__info_block {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  gap: 10px;
+}
+
+.about__info_block_text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.about__info_block_text_title {
+  display: flex;
+  font-family: "SourceSans3-Regular";
+  color: #ffffffe8;
+  font-size: 30px;
+  gap: 10px;
+}
+
+.about__info_block_text_image {
+  width: 30px;
+}
+
+.about__info_block_text_description {
+  font-family: "SourceSans3-Regular";
+  color: #679bfb;
+  font-size: 14px;
+}
+
+.about__info_block_message {
+  font-family: "SourceSans3-Regular";
+  color: #e0e0e0e8;
+  font-size: 14px;
+}
+
+.about__info_block_button {
+  width: 150px;
+  height: 45px;
+  outline: none;
+  font-family: "SourceSans3-Regular";
+  color: #ffffffe8;
+  background: #111115;
+  border-radius: 5px;
+  border: none;
+  transition: transform 0.2s ease, background 0.3s ease;
+  will-change: transform;
+  cursor: pointer;
+}
+
+.about__info_block_button:hover {
+  transform: scale(1.03);
+  backface-visibility: hidden;
+}
+
+.about__info_image {
+  width: 650px;
+  height: 350px;
+  object-fit: cover;
+}
