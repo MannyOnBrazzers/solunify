@@ -5,26 +5,7 @@
   min-width: 1100px;
   max-width: 100%;
   margin: 0 auto;
-  overflow: hidden;
-}
-
-.page__button_text {
-  width: 125px;
-  height: 45px;
-  outline: none;
-  font-family: "SourceSans3-Regular";
-  color: #ffffffe8;
-  background: none;
-  border-radius: 25px;
-  border: 2px solid #192c3f;
-  transition: transform 0.2s ease, background 0.3s ease;
-  will-change: transform;
-  cursor: pointer;
-}
-
-.page__button_text:hover {
-  transform: scale(1.03);
-  backface-visibility: hidden;
+  overflow: visible;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -33,19 +14,15 @@
 
 @media screen and (max-width: 1500px) {
   .page {
-    padding: 50px 100px;
     min-width: 800px;
     max-width: 100%;
-    gap: 50px;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .page {
-    padding: 50px;
     min-width: 600px;
     max-width: 100%;
-    gap: 30px;
   }
 
   .page::before {
@@ -65,7 +42,6 @@
 
 @media screen and (max-width: 600px) {
   .page {
-    padding: 25px;
     min-width: 300px;
     max-width: 100%;
   }

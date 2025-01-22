@@ -24,7 +24,11 @@
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, #b5cfff 0%, #679bfb 65%);
+  background: linear-gradient(
+    to right,
+    var(--gradient-primary) 0%,
+    var(--gradient-secondary) 65%
+  );
   gap: 25px;
 }
 
@@ -43,13 +47,10 @@
 .benefits__info_header_text_title {
   display: flex;
   font-family: "SourceSans3-Regular";
-  color: #ffffffe8;
+  color: var(--text-primary);
   font-size: 30px;
   gap: 10px;
-}
-
-.benefits__info_header_text_title span {
-  font-family: "SourceSans3-Bold";
+  margin: 0;
 }
 
 .benefits__info_header_text_image {
@@ -58,14 +59,15 @@
 
 .benefits__info_header_text_description {
   font-family: "SourceSans3-Regular";
-  color: #ffffff;
+  color: var(--text-primary);
   font-size: 14px;
+  margin: 0;
 }
 
 .benefits__info_header_message {
   width: 600px;
   font-family: "SourceSans3-Regular";
-  color: #e0e0e0e8;
+  color: var(--text-secondary);
   font-size: 15px;
   margin: 0;
 }
@@ -92,19 +94,22 @@
   top: -12px;
   left: 0;
   font-family: "SourceSans3-Bold";
-  color: #ffffff60;
+  color: var(--text-transparent);
   font-size: 40px;
+  margin: 0;
 }
 
 .benefits__info_content_item_title {
   text-indent: 55px;
   font-family: "SourceSans3-Bold";
-  color: #ffffff;
+  color: var(--text-primary);
   font-size: 20px;
+  margin: 0;
 }
 
 .benefits__info_content_item_description {
   font-family: "SourceSans3-Regular";
-  color: #e0e0e0e8;
+  color: var(--text-secondary);
   font-size: 15px;
+  margin: 0;
 }

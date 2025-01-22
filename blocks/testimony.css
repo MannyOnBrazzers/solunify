@@ -33,13 +33,10 @@
 .testimony__header_text_title {
   display: flex;
   font-family: "SourceSans3-Regular";
-  color: #ffffffe8;
+  color: var(--testimony-primary);
   font-size: 30px;
   gap: 10px;
-}
-
-.testimony__header_text_title span {
-  font-family: "SourceSans3-Bold";
+  margin: 0;
 }
 
 .testimony__header_text_image {
@@ -48,15 +45,16 @@
 
 .testimony__header_text_description {
   font-family: "SourceSans3-Regular";
-  color: #679bfb;
+  color: var(--accent-primary);
   font-size: 14px;
+  margin: 0;
 }
 
 .testimony__header_message {
   text-align: center;
   width: 600px;
   font-family: "SourceSans3-Regular";
-  color: #e0e0e0e8;
+  color: var(--testimony-secondary);
   font-size: 15px;
   margin: 0;
 }
@@ -69,14 +67,16 @@
 
 .testimony__header_footer_title {
   font-family: "SourceSans3-Bold";
-  color: #ffffffe8;
+  color: var(--testimony-primary);
   font-size: 20px;
+  margin: 0;
 }
 
 .testimony__header_footer_description {
   font-family: "SourceSans3-Light";
-  color: #e0e0e0e8;
+  color: var(--testimony-secondary);
   font-size: 14px;
+  margin: 0;
 }
 
 .testimony__header_slider {
@@ -91,14 +91,14 @@
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.57);
+  border: 2px solid var(--text-secondary);
   transition: transform 0.2s ease, background 0.3s ease;
   will-change: transform;
   cursor: pointer;
 }
 
 .testimony__header_slider_item.selected {
-  background-color: white;
+  background-color: var(--text-primary);
 }
 
 .testimony__header_slider_item:hover {

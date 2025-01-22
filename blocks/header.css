@@ -2,11 +2,13 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   gap: 150px;
   padding: 10px 100px;
   box-sizing: border-box;
-  background: #111115;
+  background: var(--accent-secondary);
 }
 
 .header__logo {
@@ -33,11 +35,11 @@
   width: 150px;
   font-family: "SourceSans3-Regular";
   font-size: 14px;
-  color: #ffffffe8;
+  color: var(--text-primary);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
-  border-right: 1px solid white;
+  border-right: 1px solid var(--text-primary);
 }
 
 .nav__link.no-border {
@@ -45,12 +47,12 @@
 }
 
 .nav__link.active {
-  color: #679bfb;
+  color: var(--accent-primary);
   font-weight: bold;
 }
 
 .nav__link:hover {
-  color: #679bfb;
+  color: var(--accent-primary);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -58,9 +60,6 @@
 /* -------------------------------------------------------------------------- */
 
 @media screen and (max-width: 1024px) {
-  .nav__links {
-    gap: 30px;
-  }
 }
 
 @media screen and (max-width: 600px) {

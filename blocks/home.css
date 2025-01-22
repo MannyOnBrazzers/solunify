@@ -7,7 +7,7 @@
   width: 100%;
   height: 800px;
   gap: 100px;
-  background-color: #679bfb;
+  background-color: var(--accent-primary);
 }
 
 .home__image {
@@ -34,16 +34,18 @@
 
 .home__header_title {
   font-family: "SourceSans3-Regular";
-  color: #ffffffe8;
+  color: var(--header-primary);
   letter-spacing: 75px;
   font-size: 150px;
+  margin: 0;
 }
 
 .home__header_description {
   font-family: "SourceSans3-Regular";
-  color: #dededee8;
+  color: var(--header-secondary);
   letter-spacing: 10px;
   font-size: 20px;
+  margin: 0;
 }
 
 .home__header_button {
@@ -51,8 +53,8 @@
   height: 45px;
   outline: none;
   font-family: "SourceSans3-Regular";
-  color: #ffffffe8;
-  background: #111115;
+  color: var(--text-primary);
+  background: var(--accent-secondary);
   border-radius: 5px;
   border: none;
   transition: transform 0.2s ease, background 0.3s ease;
@@ -78,14 +80,14 @@
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.57);
+  border: 2px solid var(--text-secondary);
   transition: transform 0.2s ease, background 0.3s ease;
   will-change: transform;
   cursor: pointer;
 }
 
 .home__header_slider_item.selected {
-  background-color: white;
+  background-color: var(--text-primary);
 }
 
 .home__header_slider_item:hover {
@@ -99,7 +101,12 @@
   justify-content: center;
   position: absolute;
   margin-top: auto;
-  background: linear-gradient(to right, transparent, #679bfbce, transparent);
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--accent-primary-transparent),
+    transparent
+  );
   width: 100%;
   height: 125px;
   bottom: 0;
@@ -108,13 +115,14 @@
 
 .home__header_sale_text {
   font-family: "SourceSans3-LightItalic";
-  color: #ffffffe8;
+  color: var(--text-primary);
   font-size: 35px;
+  margin: 0;
 }
 
 .home__header_sale_text span {
   font-family: "SourceSans3-BoldItalic";
-  color: #ffffffe8;
+  color: var(--text-primary);
   font-size: 35px;
 }
 
@@ -123,9 +131,9 @@
   height: 45px;
   outline: none;
   font-family: "SourceSans3-Regular";
-  color: #ffffffe8;
+  color: var(--text-primary);
   background: none;
-  border: 1px solid white;
+  border: 1px solid var(--text-primary);
   border-radius: 5px;
   transition: transform 0.2s ease, background 0.3s ease;
   will-change: transform;

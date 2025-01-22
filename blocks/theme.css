@@ -1,0 +1,71 @@
+:root {
+  --background: #1f2027;
+
+  --accent-primary: #679bfb;
+  --accent-secondary: #111115;
+  --accent-primary-transparent: #679bfbce;
+
+  --gradient-primary: #b5cfff;
+  --gradient-secondary: #679bfb;
+
+  --header-primary: #ffffffe8;
+  --header-secondary: #dededee8;
+
+  --pricing-primary: #1f2027;
+  --testimony-primary: #ffffffe8;
+  --testimony-secondary: #dededee8;
+
+  --text-primary: #ffffffe8;
+  --text-secondary: #dededee8;
+  --text-transparent: #ffffff60;
+
+  --form-error: rgb(255, 196, 196);
+}
+
+.dark-mode {
+  --background: #1f2027;
+
+  --accent-primary: #679bfb;
+  --accent-secondary: #111115;
+  --accent-primary-transparent: #679bfbce;
+
+  --gradient-primary: #b5cfff;
+  --gradient-secondary: #679bfb;
+
+  --header-primary: #ffffffe8;
+  --header-secondary: #dededee8;
+
+  --pricing-primary: #1f2027;
+  --testimony-primary: #ffffffe8;
+  --testimony-secondary: #dededee8;
+
+  --text-primary: #ffffffe8;
+  --text-secondary: #dededee8;
+  --text-transparent: #ffffff60;
+
+  --form-error: rgb(255, 196, 196);
+}
+
+.light-mode {
+  --background: #eaeaea;
+
+  --accent-primary: #679bfb;
+  --accent-secondary: #cccccc;
+  --accent-primary-transparent: #679bfbce;
+
+  --gradient-primary: #b5cfff;
+  --gradient-secondary: #679bfb;
+
+  --header-primary: #ffffffe8;
+  --header-secondary: #dededee8;
+
+  --pricing-primary: #ffffffe8;
+  --testimony-primary: #ffffffe8;
+  --testimony-secondary: #dededee8;
+
+  --text-primary: #000000e8;
+  --text-secondary: #414141e8;
+  --text-transparent: #00000060;
+
+  --form-error: rgb(255, 196, 196);
+}

@@ -25,13 +25,10 @@
 .pricing__header_text_title {
   display: flex;
   font-family: "SourceSans3-Regular";
-  color: #ffffffe8;
+  color: var(--text-primary);
   font-size: 30px;
   gap: 10px;
-}
-
-.pricing__header_text_title span {
-  font-family: "SourceSans3-Bold";
+  margin: 0;
 }
 
 .pricing__header_text_image {
@@ -40,15 +37,16 @@
 
 .pricing__header_text_description {
   font-family: "SourceSans3-Regular";
-  color: #679bfb;
+  color: var(--accent-primary);
   font-size: 14px;
+  margin: 0;
 }
 
 .pricing__header_message {
   text-align: center;
   width: 600px;
   font-family: "SourceSans3-Regular";
-  color: #e0e0e0e8;
+  color: var(--text-secondary);
   font-size: 15px;
   margin: 0;
 }
@@ -66,8 +64,9 @@
   width: 300px;
   padding-bottom: 25px;
   box-sizing: border-box;
-  background-color: #111115;
-  border: 1px solid #111115;
+  background-color: var(--pricing-primary);
+  border: 1px solid var(--accent-secondary);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   overflow: hidden;
   gap: 25px;
@@ -80,8 +79,8 @@
   align-items: center;
   width: 100%;
   height: 150px;
-  background-color: #111115;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.234);
+  background-color: var(--accent-secondary);
+  border-bottom: 1px solid var(--text-transparent);
   gap: 15px;
 }
 
@@ -90,29 +89,31 @@
 }
 
 .pricing__content_item.recommended .pricing__content_item_header {
-  background-color: #679bfb;
+  background-color: var(--accent-primary);
 }
 
 .pricing__content_item_header_description {
   font-family: "SourceSans3-Light";
-  color: #e0e0e0e8;
+  color: var(--text-secondary);
   font-size: 15px;
+  margin: 0;
 }
 
 .pricing__content_item_header_price {
   font-family: "SourceSans3-Regular";
-  color: #ffffffe8;
+  color: var(--text-primary);
   font-size: 35px;
+  margin: 0;
 }
 
 .pricing__content_item_header_price span {
   margin-left: 10px;
   font-size: 55px;
-  color: #679bfb;
+  color: var(--accent-primary);
 }
 
 .pricing__content_item.recommended .pricing__content_item_header_price span {
-  color: #ffffffe8;
+  color: var(--text-primary);
 }
 
 .pricing__content_item_block {
@@ -126,12 +127,13 @@
 
 .pricing__content_item_block_item {
   font-family: "SourceSans3-Regular";
-  color: #ffffffe8;
+  color: var(--text-primary);
   font-size: 13px;
+  margin: 0;
 }
 
 .pricing__content_item_block_item span {
-  color: #e0e0e0e8;
+  color: var(--text-secondary);
 }
 
 .pricing__content_item_button {
@@ -140,10 +142,10 @@
   margin-top: 25px;
   outline: none;
   font-family: "SourceSans3-Regular";
-  color: #ffffffe8;
+  color: var(--text-primary);
   font-size: 13px;
   background: none;
-  border: 2px solid #679bfb;
+  border: 2px solid var(--accent-primary);
   border-radius: 5px;
   transition: transform 0.2s ease, background 0.3s ease;
   will-change: transform;
@@ -156,5 +158,5 @@
 }
 
 .pricing__content_item.recommended .pricing__content_item_button {
-  background-color: #679bfb;
+  background-color: var(--accent-primary);
 }

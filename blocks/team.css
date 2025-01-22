@@ -25,13 +25,10 @@
 .team__header_text_title {
   display: flex;
   font-family: "SourceSans3-Regular";
-  color: #ffffffe8;
+  color: var(--text-primary);
   font-size: 30px;
   gap: 10px;
-}
-
-.team__header_text_title span {
-  font-family: "SourceSans3-Bold";
+  margin: 0;
 }
 
 .team__header_text_image {
@@ -40,15 +37,16 @@
 
 .team__header_text_description {
   font-family: "SourceSans3-Regular";
-  color: #679bfb;
+  color: var(--accent-primary);
   font-size: 14px;
+  margin: 0;
 }
 
 .team__header_message {
   text-align: center;
   width: 600px;
   font-family: "SourceSans3-Regular";
-  color: #e0e0e0e8;
+  color: var(--text-secondary);
   font-size: 15px;
   margin: 0;
 }
@@ -97,12 +95,14 @@
 
 .team__content_item_text_title {
   font-family: "SourceSans3-Regular";
-  color: #ffffffe8;
+  color: var(--text-primary);
   font-size: 20px;
+  margin: 0;
 }
 
 .team__content_item_text_description {
   font-family: "SourceSans3-Light";
-  color: #679bfb;
+  color: var(--accent-primary);
   font-size: 13px;
+  margin: 0;
 }

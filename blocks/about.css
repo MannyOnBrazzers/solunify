@@ -29,13 +29,10 @@
 .about__info_block_text_title {
   display: flex;
   font-family: "SourceSans3-Regular";
-  color: #ffffffe8;
+  color: var(--text-primary);
   font-size: 30px;
   gap: 10px;
-}
-
-.about__info_block_text_title span {
-  font-family: "SourceSans3-Bold";
+  margin: 0;
 }
 
 .about__info_block_text_image {
@@ -44,13 +41,14 @@
 
 .about__info_block_text_description {
   font-family: "SourceSans3-Regular";
-  color: #679bfb;
+  color: var(--accent-primary);
   font-size: 14px;
+  margin: 0;
 }
 
 .about__info_block_message {
   font-family: "SourceSans3-Regular";
-  color: #e0e0e0e8;
+  color: var(--text-secondary);
   font-size: 14px;
 }
 
@@ -60,8 +58,8 @@
   margin-top: 25px;
   outline: none;
   font-family: "SourceSans3-Regular";
-  color: #ffffffe8;
-  background: #111115;
+  color: var(--text-primary);
+  background: var(--accent-secondary);
   border-radius: 5px;
   border: none;
   transition: transform 0.2s ease, background 0.3s ease;
@@ -81,7 +79,7 @@
 }
 
 .about__info_image {
-  background-color: #679bfb;
+  background-color: var(--accent-primary);
   overflow: hidden;
   object-fit: cover;
 }
@@ -119,13 +117,10 @@
 .about__footer_text_title {
   display: flex;
   font-family: "SourceSans3-Regular";
-  color: #ffffffe8;
+  color: var(--text-primary);
   font-size: 30px;
   gap: 10px;
-}
-
-.about__footer_text_title span {
-  font-family: "SourceSans3-Bold";
+  margin: 0;
 }
 
 .about__footer_text_image {
@@ -134,15 +129,16 @@
 
 .about__footer_text_description {
   font-family: "SourceSans3-Regular";
-  color: #679bfb;
+  color: var(--accent-primary);
   font-size: 14px;
+  margin: 0;
 }
 
 .about__footer_text_message {
   width: 500px;
   text-align: center;
   font-family: "SourceSans3-Regular";
-  color: #b9b9b9e8;
+  color: var(--text-secondary);
   font-size: 14px;
   margin: 0;
 }
@@ -178,12 +174,14 @@
 
 .about__footer_content_item_text_title {
   font-family: "SourceSans3-Regular";
-  color: #ffffffe8;
+  color: var(--text-primary);
   font-size: 20px;
+  margin: 0;
 }
 
 .about__footer_content_item_text_description {
   font-family: "SourceSans3-Regular";
-  color: #b9b9b9e8;
+  color: var(--text-secondary);
   font-size: 14px;
+  margin: 0;
 }
