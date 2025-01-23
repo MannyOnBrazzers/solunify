@@ -4,7 +4,7 @@
   align-items: center;
   position: relative;
   width: 100%;
-  padding: 50px 350px;
+  padding: 50px 50px;
   box-sizing: border-box;
   gap: 50px;
 }
@@ -53,9 +53,11 @@
 
 .team__content {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
   margin: 0;
+  padding: 0;
 }
 
 .team__content_item {
@@ -105,4 +107,78 @@
   color: var(--accent-primary);
   font-size: 13px;
   margin: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              Responsive Design                             */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (max-width: 800px) {
+  .team {
+    padding: 50px 10px;
+    gap: 50px;
+  }
+
+  .team__header_text_title {
+    font-size: 20px;
+  }
+
+  .team__header_text_image {
+    width: 20px;
+  }
+
+  .team__header_text_description {
+    font-size: 11px;
+  }
+
+  .team__header_message {
+    width: auto;
+    font-size: 12px;
+  }
+
+  .team__content_item_text_title {
+    font-size: 20px;
+  }
+
+  .team__content_item_text_description {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .team {
+    padding: 50px 10px;
+    gap: 50px;
+  }
+
+  .team__header_text_title {
+    font-size: 16px;
+  }
+
+  .team__header_text_image {
+    width: 16px;
+  }
+
+  .team__header_text_description {
+    font-size: 10px;
+  }
+
+  .team__header_message {
+    font-size: 10px;
+  }
+
+  .team__content_item_text_title {
+    font-size: 16px;
+  }
+
+  .team__content_item_text_description {
+    font-size: 10px;
+  }
+
+  .team__content_item_icon {
+    width: 65px;
+    height: 65px;
+    bottom: -20px;
+    right: -30px;
+  }
 }

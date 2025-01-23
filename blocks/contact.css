@@ -206,3 +206,108 @@
   transform: scale(1.03);
   backface-visibility: hidden;
 }
+
+/* -------------------------------------------------------------------------- */
+/*                              Responsive Design                             */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1600px) {
+  .contact {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .contact__form_block {
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10px;
+  }
+
+  .contact__form_block_inputs_item_field {
+    width: 600px;
+  }
+
+  .contact__image_block {
+    background-color: #00000000;
+  }
+
+  .contact__image {
+    display: none;
+  }
+
+  .contact__image_block_sale {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contact__form_header_text {
+    align-items: center;
+  }
+
+  .contact__form_header_text_title {
+    font-size: 20px;
+  }
+
+  .contact__form_header_text_description {
+    font-size: 11px;
+  }
+
+  .contact__form_header_message {
+    text-align: center;
+    width: auto;
+    font-size: 12px;
+  }
+
+  .contact__form_block_inputs_item_field {
+    width: 300px;
+    font-size: 12px;
+  }
+
+  .contact__form_block_inputs_item_field::placeholder {
+    font-size: 12px;
+  }
+
+  .contact__image_block_sale {
+    flex-direction: column;
+    height: 125px;
+    gap: 10px;
+  }
+
+  .contact__image_block_sale_text {
+    font-size: 20px;
+  }
+
+  .contact__image_block_sale_text span {
+    font-size: 20px;
+  }
+
+  .contact__image_block_sale_button {
+    width: 85px;
+    height: 35px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contact__form_header_text_title {
+    font-size: 16px;
+  }
+
+  .contact__form_header_text_description {
+    font-size: 10px;
+  }
+
+  .contact__form_header_message {
+    font-size: 10px;
+  }
+
+  .contact__form_block_inputs_item_field {
+    width: 200px;
+    font-size: 10px;
+  }
+
+  .contact__form_block_inputs_item_field::placeholder {
+    font-size: 10px;
+  }
+}

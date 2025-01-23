@@ -105,3 +105,67 @@
   transform: scale(1.03);
   backface-visibility: hidden;
 }
+
+/* -------------------------------------------------------------------------- */
+/*                              Responsive Design                             */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (max-width: 800px) {
+  .testimony {
+    height: 350px;
+  }
+
+  .testimony__header_text_title {
+    font-size: 20px;
+  }
+
+  .testimony__header_text_image {
+    width: 20px;
+  }
+
+  .testimony__header_text_description {
+    font-size: 11px;
+  }
+
+  .testimony__header_message {
+    width: auto;
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  .testimony__header_slider_item {
+    width: 4px;
+    height: 4px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .testimony__header_text_title {
+    font-size: 16px;
+  }
+
+  .testimony__header_text_image {
+    width: 16px;
+  }
+
+  .testimony__header_text_description {
+    font-size: 10px;
+  }
+
+  .testimony__header_message {
+    font-size: 10px;
+  }
+
+  .testimony__header_slider_item {
+    width: 3px;
+    height: 3px;
+  }
+
+  .testimony__header_footer_title {
+    font-size: 16px;
+  }
+
+  .testimony__header_footer_description {
+    font-size: 10px;
+  }
+}
