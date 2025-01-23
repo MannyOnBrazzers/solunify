@@ -160,3 +160,22 @@
 .pricing__content_item.recommended .pricing__content_item_button {
   background-color: var(--accent-primary);
 }
+
+/* -------------------------------------------------------------------------- */
+/*                              Responsive Design                             */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1800px) {
+  .pricing {
+    padding: 50px 50px 100px 50px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 375px) {
+}

@@ -5,7 +5,6 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  gap: 150px;
   padding: 10px 100px;
   box-sizing: border-box;
   background: var(--accent-secondary);
@@ -60,20 +59,29 @@
 /* -------------------------------------------------------------------------- */
 
 @media screen and (max-width: 1024px) {
+  .header {
+    padding: 10px 50px;
+  }
+
+  .nav__link {
+    width: 100px;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .header {
-    gap: 25px;
+    justify-content: flex-end;
+    padding: 10px;
+    gap: 15px;
   }
 
   .header__logo {
-    width: 25px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
   }
 
   .nav__link {
-    font-size: 12px;
-    gap: 15px;
+    font-size: 11px;
+    width: 55px;
   }
 }
